@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting minutes webpage">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <header>
+      <h1>Star Wars Movie</h1>
+      <h2>Brainstorming</h2>
+      <h3>April 14, 2026</h3>
+      <p>
+        This page contains the <strong>official meeting minutes</strong> for the Star Wars Movie project.
+        The goal of this meeting was to discuss early ideas.
+      </p>
+      <hr>
+    </header>
+
+    <nav>
+      <a href="#attendance">Attendance</a><br>
+      <a href="#agenda">Agenda</a><br>
+      <a href="#unfinished-business">Unfinished Business</a><br>
+      <a href="#new-business">New Business</a><br>
+      <a href="#miscellaneous">Miscellaneous</a><br>
+      <a href="#diagrams">Diagrams</a><br>
+      <a href="#audio-recording">Audio Recording</a><br>
+      <a href="#video-recording">Video Recording</a>
+    </nav>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <div>
+          <p>
+            <strong>Present:</strong>
+          </p>
+          <ul>
+            <li>Yoda</li>
+            <li>Han</li>
+            <li>Darth</li>
+            <li>Luke</li>
+          </ul>
+        </div>
+
+        <div>
+          <p>
+            <strong>Absent:</strong>
+          </p>
+          <ul>
+            <li>Palpatine</li>
+          </ul>
+        </div>
+        <hr>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <p>
+          Covering this:
+        </p>
+        <ol>
+          <li>Discuss early ideas for the Star Wars Movie</li>
+          <li>Brainstorm</li>
+          <li>Early responsibilities</li>
+          <li>Plan for the next meeting</li>
+        </ol>
+        <p>
+          One important idea was
+            creating a <span>video</span> that would
+          be easy for everyone to understand and follow along with.
+        </p>
+        <hr>
+      </section>
+
+      <section id="unfinished-business">
+        <h2>Unfinished Business</h2>
+        <p>
+          From the last discussion, the team had <b>not yet decided</b> on the final set of
+          script ideas.
+        </p>
+        <ul>
+          <li>Need to choose between a minimal design and a feature-rich design</li>
+          <li>Need to confirm who will prepare the first mockup</li>
+        </ul>
+        <hr>
+      </section>
+
+      <section id="new-business">
+        <h2>New Business</h2>
+        <p>
+          During this meeting, the team discussed several <em>new ideas</em> for the project.
+        </p>
+        <ul>
+          <li>Adding short and long break times</li>
+          <li>Tracking completed work sessions</li>
+          <li>Displaying daily productivity summaries</li>
+          <li>Keeping the interface <i>clean and distraction-free</i></li>
+        </ul>
+        <p>
+          The team also looked at inspiration from
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a>
+          for HTML structure ideas.
+        </p>
+        <hr>
+      </section>
+
+      <section id="miscellaneous">
+        <h2>Miscellaneous Comments, Questions, and Concerns</h2>
+        <p>
+          <strong>Question:</strong> Should Han Solo be revived?<br>
+          <strong>Concern:</strong> The team wants the project to stay manageable for the first version.<br>
+          <strong>Comment:</strong> Everyone agreed that a working basic version is better than too many unfinished features.
+        </p>
+        <hr>
+      </section>
+
+      <section id="diagrams">
+        <h2>Diagrams / Architecture</h2>
+        <p>
+            This image was used as a visual reference during the meeting.
+        </p>
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg"
+            alt="Star Wars logo"
+            width="300"
+        >
+        <hr>
+      </section>
+
+      <section id="video-recording">
+        <h2>Video Recording</h2>
+        <p>
+          A video recording of the meeting will be added here.
+        </p>
+      </section>
+
+      <section id="extra-notes">
+        <h2>Extra Notes</h2>
+        <details>
+          <summary>Click to view additional production notes</summary>
+          <p>
+            The team discussed possible planets, character returns, and general story direction
+            for the next Star Wars movie.
+          </p>
+        </details>
+      </section>
+
+      <section id="fan-form">
+        <h2>Star Wars Fan Form</h2>
+        <form>
+          <fieldset>
+            <legend>Favorite Character</legend>
+
+            <p>
+              <label for="character-name">Character name:</label>
+              <input type="text" id="character-name" name="character-name" list="character-list">
+            </p>
+
+            <datalist id="character-list">
+              <option value="Luke Skywalker"></option>
+              <option value="Darth Vader"></option>
+              <option value="Yoda"></option>
+              <option value="Han Solo"></option>
+            </datalist>
+
+            <p>
+              <label for="favorite-date">Favorite movie release date:</label>
+              <input type="date" id="favorite-date" name="favorite-date">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Choose Your Side</legend>
+
+            <p>
+              <input type="radio" id="light-side" name="side" value="Light Side">
+              <label for="light-side">Light Side</label>
+            </p>
+
+            <p>
+              <input type="radio" id="dark-side" name="side" value="Dark Side">
+              <label for="dark-side">Dark Side</label>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Favorite Extras</legend>
+
+            <p>
+              <input type="checkbox" id="lightsabers" name="extras" value="Lightsabers">
+              <label for="lightsabers">Lightsabers</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="space-battles" name="extras" value="Space Battles">
+              <label for="space-battles">Space Battles</label>
+            </p>
+
+            <p>
+              <input type="checkbox" id="droids" name="extras" value="Droids">
+              <label for="droids">Droids</label>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>More Opinions</legend>
+
+            <p>
+              <label for="trilogy">Favorite trilogy:</label>
+              <select id="trilogy" name="trilogy">
+                <option value="original">Original Trilogy</option>
+                <option value="prequel">Prequel Trilogy</option>
+                <option value="sequel">Sequel Trilogy</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="comments">Why do you like Star Wars?</label>
+            </p>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+
+            <p>
+              <button type="submit">Submit Form</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p>Meeting minutes for Star Wars Movie Project</p>
+    </footer>
+  </body>
+</html>
