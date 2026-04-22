@@ -1,0 +1,53 @@
+
+/* CSS variables with fallbacks */
+:root {
+  --star-wars-yellow: #FFE81F;
+  --space-blue: #1a1a40;
+}
+/* color name */
+body {
+  background-color: black;
+  background-image: linear-gradient(to bottom, #000000, #1a1a40, #3b0066);
+  background-attachment: fixed;
+  color: white;
+}
+
+/* hex code */
+header {
+  background-color: var(--space-blue, navy);
+  color: var(--star-wars-yellow, yellow);
+}
+
+/* rgb */
+h1 {
+  color: rgb(255, 232, 31);
+}
+
+/* rgba */
+nav {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* hsl */
+h2 {
+  color: hsl(50, 100%, 60%);
+}
+
+/* hsla */
+section {
+  background-color: hsla(240, 50%, 20%, 0.65);
+  margin: 20px;
+  padding: 16px;
+}
+
+/* wider-gamut color using color() */
+h3 {
+  color: color(display-p3 1 0.8 0);
+}
+
+/* color-mix */
+a {
+  color: color-mix(in srgb, yellow 70%, white 30%);
+}
+
+
