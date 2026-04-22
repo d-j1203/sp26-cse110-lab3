@@ -211,3 +211,87 @@ header {
   }
 }
 
+/* Selector examples */
+
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Element Selector */
+legend {
+  color: var(--star-wars-yellow, yellow);
+}
+
+/* Class Selector */
+.main-title {
+  text-shadow: 2px 2px 4px black;
+}
+
+/* ID Selector */
+#attendance {
+  border-color: yellow;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+  border-color: var(--star-wars-yellow, yellow);
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* Pseudo-class Selector */
+p:hover {
+  color: color-mix(in srgb, white 80%, yellow 20%);
+}
+
+/* Selector List */
+h1, h2, h3 {
+  letter-spacing: 1px;
+}
+
+/* Descendant Combinator */
+main section {
+  scroll-margin-top: 90px;
+}
+
+/* Child Combinator */
+nav > a {
+  font-weight: bold;
+}
+
+/* General Sibling Combinator */
+h2 ~ p {
+  font-style: italic;
+}
+
+/* Adjacent Sibling Combinator */
+h2 + p {
+  border-left: 4px solid var(--star-wars-yellow, yellow);
+  padding-left: 10px;
+}
+
+/* Combining Two Selectors */
+h1.main-title {
+  text-transform: uppercase;
+}
+
+/* :has() selector */
+section:has(form) {
+  background-color: hsla(280, 60%, 25%, 0.75);
+}
+
+/* Nested Selectors */
+section {
+  & h2 {
+    text-align: center;
+  }
+
+  & ul {
+    padding-left: 30px;
+  }
+
+  & li:hover {
+    color: var(--star-wars-yellow, yellow);
+  }
+}
