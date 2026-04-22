@@ -10,22 +10,38 @@ body {
   background-image: linear-gradient(to bottom, #000000, #1a1a40, #3b0066);
   background-attachment: fixed;
   color: white;
+  font-size: 1rem;
 }
 
 /* hex code */
 header {
   background-color: var(--space-blue, navy);
   color: var(--star-wars-yellow, yellow);
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 /* rgb */
 h1 {
   color: rgb(255, 232, 31);
+  font-size: 28pt;
 }
 
 /* rgba */
 nav {
   background-color: rgba(255, 255, 255, 0.12);
+  margin: 10px 30px 20px 30px;
+  padding: 12px 16px 12px 16px;
+  border-style: solid;
+  border-color: #FFE81F;
+  border-width: 2px;
+  border-radius: 10px;
 }
 
 /* hsl */
@@ -33,11 +49,15 @@ h2 {
   color: hsl(50, 100%, 60%);
 }
 
-/* hsla */
+/* Short padding property: top right bottom left */
 section {
   background-color: hsla(240, 50%, 20%, 0.65);
   margin: 20px;
-  padding: 16px;
+  padding: 16px 20px 16px 20px;
+  border-style: solid;
+  border-color: color-mix(in srgb, yellow 60%, white 40%);
+  border-width: 2px;
+  border-radius: 12px;
 }
 
 /* wider-gamut color using color() */
@@ -49,5 +69,33 @@ h3 {
 a {
   color: color-mix(in srgb, yellow 70%, white 30%);
 }
+
+
+/* Relative unit: em */
+p {
+  line-height: 1.5em;
+}
+
+/* Relative unit: % */
+main {
+  width: 90%;
+  margin: auto;
+}
+
+
+/* Absolute unit: px */
+img {
+  width: 300px;
+}
+
+/* Absolute unit: cm */
+hr {
+  margin-top: 0.3cm;
+  margin-bottom: 0.3cm;
+}
+
+
+
+
 
 
