@@ -63,7 +63,7 @@ section {
 
 /* wider-gamut color using color() */
 h3 {
-  color: color(from #ffcc00 display-p3 r g b);
+  color: color(display-p3 1 0.8 0)
 }
 
 /* color-mix */
@@ -282,14 +282,16 @@ section:has(form) {
 }
 
 /* Nested Selectors */
-/* Nested selectors written with @nest */
-/* Nested selector example */
 section {
-  /* parent rule property */
-  outline-offset: 4px;
+  & h2 {
+    text-align: center;
+  }
 
-  :hover {
-    /* nested child rule property */
-    outline: 2px dashed var(--star-wars-yellow, yellow);
+  & ul {
+    padding-left: 30px;
+  }
+
+  & li:hover {
+    color: var(--star-wars-yellow, yellow);
   }
 }
